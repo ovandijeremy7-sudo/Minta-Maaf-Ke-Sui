@@ -1,0 +1,83 @@
+body {
+  font-family: 'Calisto MT', cursive;
+  background: linear-gradient(to right, #ffdde1, #ee9ca7);
+  text-align: center;
+  padding: 50px;
+  overflow: hidden;
+}
+
+.container {
+  background: rgba(255,255,255,0.9);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  max-width: 500px;
+  margin: auto;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+  .message {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+
+h1 {
+  color: #e63946;
+}
+
+.message {
+  font-size: 22px;
+  margin: 20px 0;
+  animation: fadeIn 3s ease-in-out;
+}
+
+button {
+  background: #e63946;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: 'Dancing Script', cursive;
+}
+
+button:hover {
+  background: #d62828;
+}
+
+#surprise {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #457b9d;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.heart {
+  position: absolute;
+  top: -50px;
+  font-size: 24px;
+  color: red;
+  animation: fall 5s forwards;
+}
+
+@keyframes fall {
+  0% { transform: translateY(-50px); opacity: 0; }
+  100% { transform: translateY(600px); opacity: 1; }
+}
